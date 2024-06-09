@@ -65,7 +65,7 @@ body {
   transform: translateY(-30px);
   text-decoration: none;
   color: rgb(17, 91, 175);
-  opacity: 0; 
+  opacity: 0;
   transition: opacity 0.7s ease;
   position: absolute;
   left: 36px;
@@ -94,16 +94,17 @@ body {
 @media (max-width: 600px) {
   body {
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
   }
   .gallery {
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: nowrap;
     overflow-x: auto;
-    width: 100%;
+    width: auto;
     height: auto;
+    margin: 4em 2em;
   }
   .photo {
     flex: 0 0 auto;
@@ -118,6 +119,9 @@ body {
     margin: 0 auto;
   }
   .info {
+    display: none;
+  }
+  .know-more {
     display: none;
   }
 }
